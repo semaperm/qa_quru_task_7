@@ -62,7 +62,7 @@ class TestCart:
 
         cart.add_product(book, buy_product_count)
         cart.add_product(book, buy_product_count + 35)
-        assert cart.products[book] == 50
+        assert cart.products[book] == 65
         assert book in cart.products.keys()
 
     def test_remove_product(self, cart, book, pencile):
